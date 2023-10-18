@@ -234,3 +234,10 @@ app.post("/get-chat", async (req, res) => {
     });
   }
 });
+app.get("/", (req, res) => {
+  //home route
+  return res.status(200).json({
+    //return the message
+    message: "welcome to the chatgpt api",
+  });
+});
