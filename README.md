@@ -18,7 +18,7 @@ You can effortlessly integrate this solution into your own project, enabling you
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/arbind-mahato/chatgpt-infinite.git
 ```
 
 Go to the project directory
