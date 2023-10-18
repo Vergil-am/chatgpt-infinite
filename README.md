@@ -51,7 +51,7 @@ Start the server
 
 | Key             | Value                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| text* | The text you wish to send to ChatGPT.|
+| message* | The text you wish to send to ChatGPT.|
 | email* | openai account email |
 | Password* | openai account password |
 | chatgpt-version| coming soon|
