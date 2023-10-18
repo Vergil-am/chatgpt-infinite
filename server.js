@@ -22,7 +22,7 @@ let loadNewBrowser = async () => {
   if (!browser) {
     browser = await puppeteer.launch({
       //launch the browser
-      headless: false, //change to false if you want to see the browser
+      headless: "new", //change to false if you want to see the browser
       // executablePath: "path/to/Chrome", //change this to your chrome path ex: C:/Program Files/Google/Chrome/Application/chrome.exe or remove this line if you want to use the default chrome
     });
   }
