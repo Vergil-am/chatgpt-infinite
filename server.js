@@ -121,7 +121,7 @@ app.post("/get-chat", async (req, res) => {
       await page.type("textarea#prompt-textarea", "test message"); //type the message
       let clickTheSendButton = await page.evaluate(() => {
         //click the send button
-        let btn = document.querySelector('[data-testid="send-button"]');
+        let btn = document.querySelector('[data-testid="send-button"]'); //newly added
         btn.click();
       });
       return res.status(200).json({
