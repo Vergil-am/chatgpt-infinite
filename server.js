@@ -121,9 +121,7 @@ app.post("/get-chat", async (req, res) => {
       await page.type("textarea#prompt-textarea", "test message"); //type the message
       let clickTheSendButton = await page.evaluate(() => {
         //click the send button
-        let btn = document.querySelector(
-          '[class="absolute p-1 rounded-md md:bottom-3 gizmo:md:bottom-2.5 md:p-2 md:right-3 dark:hover:bg-gray-900 dark:disabled:hover:bg-transparent right-2 disabled:text-gray-400 enabled:bg-brand-purple gizmo:enabled:bg-transparent text-white gizmo:text-gray-500 gizmo:dark:text-gray-300 bottom-1.5 transition-colors disabled:opacity-40"]'
-        );
+        let btn = document.querySelector('[data-testid="send-button"]');
         btn.click();
       });
       return res.status(200).json({
